@@ -1,7 +1,9 @@
 <template>
 <!-- Trigger/Open The Modal -->
   <button id="myBtn" @click="toggleModal">Open Modal</button>
-    <Modal 
+    <Modal
+    :showModal="showModal"
+    :closeModal="toggleModal" 
     />
 </template>
 

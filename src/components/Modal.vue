@@ -4,6 +4,7 @@
     <!-- Modal content -->
     <div class="modal-content">
       <h1>Hello basic project</h1>
+      <ColorPickerComponent />
     </div>
 
   </div>
@@ -11,12 +12,17 @@
 
 <script>
 
+import ColorPickerComponent from './colorPicker/ColorPicker.vue';
+
 export default {
   name: 'Modal',
   props: [
     "showModal",
     "closeModal"
-  ]
+  ],
+  components: {
+    ColorPickerComponent
+  }
 }
 </script>
 
@@ -40,7 +46,7 @@ export default {
 .modal-content {
   position: relative;
   /* background-color: #fefefe; */
-  background-color: #707070;
+  background-color: #fff;
   margin: auto;
   padding: 0;
   border: 1px solid #888;
