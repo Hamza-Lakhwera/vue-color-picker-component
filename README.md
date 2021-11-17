@@ -1,4 +1,4 @@
-# vue-media-selector-component
+# vue-color-picker-component
 
 ## Project setup
 ```
